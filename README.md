@@ -23,7 +23,7 @@ Báo cáo thị trường tuyển dụng ngành CNTT, dữ liệu và thiết k�
 | [Indeed Hiring Lab — AI Tracker](https://github.com/hiring-lab/ai-tracker) | Tỷ lệ tin tuyển yêu cầu kỹ năng AI |
 | [Dice Tech Job Report](https://www.dice.com/hiring/recruitment/reports/dice-tech-job-report) | Xu hướng theo kỹ năng và chức danh |
 | [AcademyUX](https://blog.academyux.com/) ⚠️ | Tin tuyển designer theo tháng — nguồn yếu, xem cảnh báo trong báo cáo |
-| [ITviec](https://itviec.com/report/vietnam-it-salary-and-recruitment-market) | Lương theo vị trí tại Việt Nam |
+| [ITviec](https://itviec.com/report/vietnam-it-salary-and-recruitment-market) | Báo cáo 107 trang, khảo sát 1.839 người — nhu cầu tuyển và lương theo từng vị trí tại Việt Nam (đọc trực tiếp từ PDF) |
 | [TopCV](https://insights.topcv.vn/recruitment-report-2025-2026-vie) | Nhu cầu tuyển theo vị trí tại Việt Nam |
 | [VietnamWorks](https://www.vietnamworks.com/hrinsider/bao-cao-thi-truong-tuyen-dung-q2-2026-vietnamworks.html) | Chỉ số nhu cầu tuyển dụng theo quý |
 | [TopDev](https://topdev.vn/page/bao-cao-it-viet-nam) | Ước tính quy mô nhân lực IT Việt Nam |
