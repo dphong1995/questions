@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Số lượng việc làm và lương của 23 vai trò IT, dữ liệu và thiết kế — Mỹ và Việt Nam, cập nhật 09/2026.">
+<meta property="og:title" content="Tuyển dụng IT 2026">
+<meta property="og:description" content="Số lượng việc làm và lương của 23 vai trò IT, dữ liệu và thiết kế — Mỹ và Việt Nam.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+<style>
+:root{color-scheme:light dark}
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<title>Tuyển dụng IT 2026</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#FAFAF8; --surface:#FFFFFF; --surface-2:#F2F3EF;
+  --ink:#1B1E1C; --ink-2:#464B47; --muted:#6E736E; --faint:#9BA09B;
+  --rule:#E3E4DF; --rule-strong:#CFD1CB;
+  --c1:#1A6FA8; --c2:#C25A16; --c3:#0F8060; --c4:#9B4FC0; --c5:#B03A2E;
+  --pos:#0F8060; --neg:#B03A2E; --ref:#8E938E;
+  --accent:#1A6FA8;
+  --shadow:0 1px 2px rgba(27,30,28,.05), 0 8px 24px -12px rgba(27,30,28,.14);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#131614; --surface:#1B1E1C; --surface-2:#232724;
+    --ink:#EBECE8; --ink-2:#C3C6C1; --muted:#969B96; --faint:#6E736E;
+    --rule:#2C302D; --rule-strong:#3C413D;
+    --c1:#4A93C8; --c2:#CC7526; --c3:#159C74; --c4:#A56FCC; --c5:#CE5D4E;
+    --pos:#159C74; --neg:#CE5D4E; --ref:#7B807B;
+    --accent:#4A93C8;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.5);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#131614; --surface:#1B1E1C; --surface-2:#232724;
+  --ink:#EBECE8; --ink-2:#C3C6C1; --muted:#969B96; --faint:#6E736E;
+  --rule:#2C302D; --rule-strong:#3C413D;
+  --c1:#4A93C8; --c2:#CC7526; --c3:#159C74; --c4:#A56FCC; --c5:#CE5D4E;
+  --pos:#159C74; --neg:#CE5D4E; --ref:#7B807B;
+  --accent:#4A93C8;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.5);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground); color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:15.5px; line-height:1.62; margin:0;
+  padding-inline:20px; padding-block:0 64px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1000px; margin:0 auto}
+
+h1,h2,h3{font-family:"Newsreader",Georgia,serif; font-weight:600; text-wrap:balance; margin:0}
+h1{font-size:clamp(2.1rem,5.4vw,3.2rem); line-height:1.07; letter-spacing:-.015em}
+h2{font-size:clamp(1.5rem,3.2vw,2rem); line-height:1.15; letter-spacing:-.01em}
+h3{font-size:1.12rem; line-height:1.3; font-weight:600}
+p{margin:0}
+a{color:var(--accent); text-underline-offset:3px; text-decoration-thickness:1px}
+.eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.68rem; font-weight:500;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+.lede{font-size:1.08rem; color:var(--ink-2); max-width:66ch}
+.small{font-size:.85rem; color:var(--muted); line-height:1.55}
+.tiny{font-size:.78rem; color:var(--faint); line-height:1.5}
+
+header.mast{padding-block:52px 30px; border-bottom:2px solid var(--ink); display:flex; flex-direction:column; gap:18px}
+.mast-top{display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap}
+.stamp{font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.06em; color:var(--muted)}
+.coverage{display:flex; gap:8px 22px; flex-wrap:wrap; padding-top:6px;
+  font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--muted)}
+.coverage b{color:var(--ink-2); font-weight:500}
+
+.verdicts{display:grid; grid-template-columns:1fr 1fr; border-bottom:1px solid var(--rule)}
+.verdict{padding:30px 26px 30px 0; border-right:1px solid var(--rule)}
+.verdict:last-child{padding-left:26px; padding-right:0; border-right:none}
+.verdict .flag{display:flex; align-items:center; gap:9px; margin-bottom:12px}
+.dot{width:9px; height:9px; border-radius:50%; flex:none}
+.dot.up{background:var(--pos)} .dot.flat{background:var(--c2)}
+.verdict .headline{font-family:"Newsreader",serif; font-size:1.55rem; line-height:1.2; font-weight:500; margin-bottom:10px}
+.verdict .headline .num{font-weight:600; color:var(--ink)}
+
+.stats{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--rule);
+  border-block:1px solid var(--rule)}
+.stat{background:var(--ground); padding:22px 18px 20px}
+.stat .v{font-family:"IBM Plex Mono",monospace; font-size:1.7rem; font-weight:500; line-height:1;
+  letter-spacing:-.02em; font-variant-numeric:tabular-nums}
+.stat .v.pos{color:var(--pos)} .stat .v.neg{color:var(--neg)}
+.stat .k{font-size:.82rem; color:var(--ink-2); margin-top:9px; line-height:1.4}
+.stat .src{font-family:"IBM Plex Mono",monospace; font-size:.64rem; color:var(--faint);
+  letter-spacing:.05em; margin-top:7px; text-transform:uppercase}
+
+section{padding-block:54px 0}
+.sec-head{display:flex; flex-direction:column; gap:10px; margin-bottom:8px}
+.sec-head .rule{height:1px; background:var(--ink); width:52px; margin-bottom:2px}
+section.appendix{margin-top:20px; padding-top:44px; border-top:2px solid var(--ink)}
+section.appendix .sec-head .rule{background:var(--muted)}
+
+figure{margin:32px 0 0; background:var(--surface); border:1px solid var(--rule);
+  border-radius:3px; padding:22px 20px 16px; box-shadow:var(--shadow)}
+figcaption{display:flex; flex-direction:column; gap:5px; margin-bottom:6px}
+.fig-title{font-family:"Newsreader",serif; font-size:1.18rem; font-weight:600; line-height:1.25}
+.fig-sub{font-size:.84rem; color:var(--muted); line-height:1.5}
+.chart-box{position:relative; margin-top:10px}
+svg{display:block; width:100%; height:auto; overflow:visible}
+.fig-note{margin-top:12px; padding-top:11px; border-top:1px solid var(--rule);
+  font-size:.76rem; color:var(--faint); line-height:1.5}
+
+.legend{display:flex; flex-wrap:wrap; gap:7px 18px; margin-top:14px; padding-top:12px; border-top:1px solid var(--rule)}
+.lg{display:flex; align-items:center; gap:7px; font-size:.8rem; color:var(--ink-2)}
+.lg .sw{width:16px; height:3px; border-radius:2px; flex:none}
+.lg .sw.dash{background:none!important; border-top:2px dashed var(--ref); height:0}
+
+.tt{position:absolute; pointer-events:none; opacity:0; transition:opacity .1s;
+  background:var(--surface); border:1px solid var(--rule-strong); border-radius:4px;
+  padding:9px 11px; box-shadow:var(--shadow); font-size:.78rem; min-width:160px; z-index:5}
+.tt .tt-h{font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--muted); margin-bottom:6px}
+.tt-row{display:flex; align-items:center; gap:7px; justify-content:space-between; line-height:1.5}
+.tt-row .l{display:flex; align-items:center; gap:6px; color:var(--ink-2)}
+.tt-row .s{width:8px; height:8px; border-radius:2px; flex:none}
+.tt-row .v{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; color:var(--ink); font-weight:500}
+
+.tbl-btn{margin-top:12px; background:none; border:1px solid var(--rule-strong); color:var(--ink-2);
+  font-family:"IBM Plex Mono",monospace; font-size:.7rem; letter-spacing:.07em; text-transform:uppercase;
+  padding:6px 12px; border-radius:3px; cursor:pointer}
+.tbl-btn:hover{border-color:var(--accent); color:var(--accent)}
+.tbl-btn:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.tbl-wrap{overflow-x:auto; margin-top:14px}
+table{border-collapse:collapse; width:100%; font-size:.82rem}
+th,td{text-align:right; padding:7px 10px; border-bottom:1px solid var(--rule); white-space:nowrap}
+th:first-child,td:first-child{text-align:left; white-space:normal}
+thead th{font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--muted); font-weight:500; border-bottom:1px solid var(--rule-strong)}
+tbody td{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; color:var(--ink-2)}
+tbody td:first-child{font-family:"IBM Plex Sans",sans-serif; color:var(--ink)}
+tbody tr:hover td{background:var(--surface-2)}
+tfoot td{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums;
+  color:var(--ink); font-weight:600; border-top:1px solid var(--rule-strong); border-bottom:none}
+tfoot td:first-child{font-family:"IBM Plex Sans",sans-serif}
+.swatch{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:8px}
+td .en{display:block; font-size:.72rem; color:var(--faint); font-family:"IBM Plex Mono",monospace; line-height:1.35}
+.g-pos{color:var(--pos)} .g-neg{color:var(--neg)}
+
+.cols{display:grid; grid-template-columns:1fr 1fr; gap:26px 40px; margin-top:30px}
+.note{border-left:2px solid var(--rule-strong); padding-left:16px}
+.note h3{margin-bottom:7px}
+.note p{color:var(--ink-2); font-size:.92rem}
+.callout{margin-top:30px; background:var(--surface-2); border-radius:3px; padding:20px 22px;
+  border-left:3px solid var(--c2)}
+.callout h3{margin-bottom:8px}
+.callout p{color:var(--ink-2); font-size:.92rem}
+
+.pill{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:.68rem; font-weight:500;
+  letter-spacing:.05em; padding:2px 7px; border-radius:2px; text-transform:uppercase; white-space:nowrap}
+.pill.up{background:color-mix(in srgb,var(--pos) 14%,transparent); color:var(--pos)}
+.pill.down{background:color-mix(in srgb,var(--neg) 14%,transparent); color:var(--neg)}
+.pill.flat{background:color-mix(in srgb,var(--c2) 14%,transparent); color:var(--c2)}
+
+.srcs{margin-top:22px; display:grid; gap:12px}
+.src-item{display:grid; grid-template-columns:minmax(150px,190px) 1fr; gap:16px; padding-bottom:12px;
+  border-bottom:1px solid var(--rule); align-items:baseline}
+.src-item .who{font-family:"IBM Plex Mono",monospace; font-size:.74rem; letter-spacing:.03em; color:var(--ink)}
+.src-item .what{font-size:.85rem; color:var(--muted)}
+
+footer{margin-top:56px; padding-top:22px; border-top:2px solid var(--ink)}
+
+@media (max-width:720px){
+  .verdicts{grid-template-columns:1fr}
+  .verdict{padding:24px 0; border-right:none; border-bottom:1px solid var(--rule)}
+  .verdict:last-child{padding-left:0; border-bottom:none}
+  .stats{grid-template-columns:1fr 1fr}
+  .cols{grid-template-columns:1fr}
+  .src-item{grid-template-columns:1fr; gap:3px}
+  figure{padding:18px 14px 14px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="mast-top">
+    <span class="eyebrow">Số lượng việc làm &amp; lương theo vai trò · Mỹ &amp; Việt Nam</span>
+    <span class="stamp">Cập nhật 14·09·2026</span>
+  </div>
+  <h1>Mỗi vai trò IT có<br>bao nhiêu job, lương bao nhiêu?</h1>
+  <p class="lede">23 vai trò công nghệ, dữ liệu và thiết kế — số việc làm hiện có, số vị trí mở mỗi năm, mức lương, và tin tuyển thực tế từ 01/2026 đến nay. Bối cảnh các ngành ngoài CNTT được gom riêng ở phụ lục cuối trang.</p>
+  <div class="coverage">
+    <span>Việc làm &amp; lương: <b>BLS 2025</b></span>
+    <span>Tin tuyển: <b>01–08/2026</b></span>
+    <span>Việt Nam: <b>ITviec, TopCV, VietnamWorks</b></span>
+  </div>
+</header>
+
+<div class="verdicts">
+  <div class="verdict">
+    <div class="flag"><span class="dot up"></span><span class="eyebrow">Mỹ — Tăng</span></div>
+    <p class="headline">Tin tuyển công nghệ tăng 8 tháng liên tiếp, từ ~465.000 lên gần <span class="num">600.000</span> tin đang mở.</p>
+    <p class="small">Nhưng mức tăng dồn về Software Developer, AI và an ninh mạng. Data analyst, QA thủ công và thiết kế entry-level đi ngược chiều.</p>
+  </div>
+  <div class="verdict">
+    <div class="flag"><span class="dot flat"></span><span class="eyebrow">Việt Nam — Chững</span></div>
+    <p class="headline">Nhu cầu tuyển CNTT/Viễn thông <span class="num">–0,6%</span> trong khi thị trường chung tăng +16,9%.</p>
+    <p class="small">Chỉ 60,7% doanh nghiệp dự định mở rộng đội IT, giảm từ 73% của 2024. Nhu cầu vẫn có, nhưng biên chế không nở.</p>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat">
+    <div class="v">1.717.800</div>
+    <div class="k">Software developer đang làm việc tại Mỹ — vai trò đông nhất, gấp 9 lần QA</div>
+    <div class="src">BLS 2025</div>
+  </div>
+  <div class="stat">
+    <div class="v pos">+34,6%</div>
+    <div class="k">Data scientist — vai trò tăng trưởng nhanh nhất trong 23 vai trò</div>
+    <div class="src">BLS 2025–2035</div>
+  </div>
+  <div class="stat">
+    <div class="v neg">–7,3%</div>
+    <div class="k">Computer programmer — vai trò co lại mạnh nhất</div>
+    <div class="src">BLS 2025–2035</div>
+  </div>
+  <div class="stat">
+    <div class="v">401.500</div>
+    <div class="k">Vị trí mở mỗi năm trên toàn bộ 23 vai trò, gồm cả thay thế người nghỉ</div>
+    <div class="src">BLS 2025–2035</div>
+  </div>
+</div>
+
+<!-- ============ PHẦN 1: SỐ LƯỢNG ============ -->
+<section id="jobs">
+  <div class="sec-head">
+    <div class="rule"></div>
+    <span class="eyebrow">Phần 1 — Số lượng việc làm</span>
+    <h2>Đầy đủ 23 vai trò, xếp theo quy mô</h2>
+  </div>
+  <p class="lede" style="margin-top:14px">Bảng dưới là toàn bộ nhóm nghề máy tính, toán học và thiết kế mà Cục Thống kê Lao động Mỹ theo dõi — không bỏ vai trò nào. <b>Việc làm</b> là số người đang làm nghề đó; <b>vị trí mở/năm</b> là số chỗ trống mỗi năm, gồm cả thay thế người nghỉ hưu hoặc chuyển nghề — con số này sát với "có bao nhiêu cơ hội" hơn là mức tăng trưởng.</p>
+
+  <div class="tbl-wrap" style="margin-top:26px"><div id="master-tbl"></div></div>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Số người đang làm việc, theo vai trò</div>
+      <div class="fig-sub">Software developer một mình chiếm 26% toàn bộ nhân lực của 23 vai trò cộng lại.</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-emp"></div><div class="tt" id="tt-emp"></div></div>
+    <div class="fig-note">Nguồn: BLS Employment Projections, năm gốc 2025. Lưu ý "Data analyst" không phải một nghề riêng trong hệ thống phân loại của BLS — nhân sự làm việc này nằm rải trong Data Scientists, Operations Research Analysts và Computer Occupations All Other.</div>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Tăng trưởng việc làm dự báo, 2025 → 2035</div>
+      <div class="fig-sub">Sáu vai trò được dự báo co lại. Ba trong số đó là những vai trò đông người nhất hiện nay.</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-grow"></div><div class="tt" id="tt-grow"></div></div>
+    <div class="fig-note">Nguồn: BLS Employment Projections 2025–2035. Đây là <b>dự báo 10 năm</b>, không phải số tuyển của năm 2026 — đọc kèm Phần 2.</div>
+  </figure>
+</section>
+
+<!-- ============ PHẦN 2: TIN TUYỂN 2026 ============ -->
+<section id="postings">
+  <div class="sec-head">
+    <div class="rule"></div>
+    <span class="eyebrow">Phần 2 — Tin tuyển thực tế 2026</span>
+    <h2>Từ tháng 1 đến nay, ai đang thật sự tuyển</h2>
+  </div>
+  <p class="lede" style="margin-top:14px">Bảng ở Phần 1 là bức ảnh tĩnh. Phần này là dòng chảy: có bao nhiêu tin tuyển đang mở mỗi tháng trong 2026, và mức tăng rơi vào vai trò nào.</p>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Tin tuyển dụng công nghệ đang mở tại Mỹ, theo tháng</div>
+      <div class="fig-sub">Tám tháng tăng liên tiếp. Tháng 4 lập đỉnh 3 năm về số tin <em>mới</em> đăng (271.483 tin).</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-abs"></div><div class="tt" id="tt-abs"></div></div>
+    <div class="fig-note">Nguồn: CompTIA Tech Jobs Report hàng tháng (dữ liệu Lightcast). Số T1, T3, T5, T6, T8 được công bố dạng làm tròn; T2 và T4 là số chính xác. Cột T8 vẽ ở mức 598.000 để phản ánh từ "gần 600.000".</div>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Tăng trưởng tin tuyển theo vai trò kỹ thuật, T1 → T4/2026</div>
+      <div class="fig-sub">Bốn vai trò duy nhất CompTIA công bố số cụ thể ở cấp chức danh.</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-role"></div><div class="tt" id="tt-role"></div></div>
+    <div class="fig-note">Nguồn: CompTIA Tech Jobs Report tháng 5/2026, đo mức tăng tin tuyển đang mở so với tháng 1/2026. CompTIA không công bố số tương tự cho data analyst, designer hay QA.</div>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Chỉ số tin tuyển theo nhóm nghề, 01–08/2026</div>
+      <div class="fig-sub">Mốc tháng 2/2020 = 100. Mọi nhóm IT vẫn thấp hơn 25–40% so với trước đại dịch.</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-line"></div><div class="tt" id="tt-line"></div></div>
+    <div class="legend" id="lg-line"></div>
+    <button class="tbl-btn" id="btn-tbl" aria-expanded="false" aria-controls="tbl-line">Xem dạng bảng</button>
+    <div class="tbl-wrap" id="tbl-line" hidden></div>
+    <div class="fig-note">Nguồn: Indeed Hiring Lab Job Postings Tracker, dữ liệu thô công khai đến 04/09/2026, tính trung bình theo tháng. Tháng 9 chưa đủ ngày nên không đưa vào biểu đồ.</div>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Nhóm nghề thiết kế tại Mỹ — tháng 6/2026</div>
+      <div class="fig-sub">Thanh thể hiện thay đổi so với tháng 5. Con số bên cạnh tên là số tin đang mở của tháng 6.</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-ux"></div><div class="tt" id="tt-ux"></div></div>
+    <div class="fig-note"><b>Nguồn yếu hơn phần còn lại của báo cáo.</b> Số của AcademyUX, một công ty tuyển dụng UI/UX, tổng hợp từ Adzuna API. Đây là nguồn duy nhất đếm tin tuyển designer theo tháng, nhưng các bài của họ <em>không khớp nhau</em>: bài tháng 4 ghi Product Design tháng 3 là 17.545 tin, bài tháng 3 lại ghi 16.342. Vì vậy chỉ dùng ảnh chụp tháng 6 và không dựng chuỗi thời gian. Tổng tháng 6: 52.670 tin.</div>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Tỷ lệ tin tuyển có yêu cầu kỹ năng AI — trên toàn bộ tin tuyển tại Mỹ</div>
+      <div class="fig-sub">Đây là lực đang sắp xếp lại thứ hạng của mọi vai trò phía trên.</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-ai"></div><div class="tt" id="tt-ai"></div></div>
+    <div class="fig-note">Nguồn: Indeed Hiring Lab AI Tracker, dữ liệu thô đến 31/08/2026. Tăng từ 4,56% (T1/2026) lên 6,54% (T8/2026) — gấp đôi mức 3,34% của cùng kỳ 2025. Riêng tin tuyển gắn AI/ML tăng 101% so với cùng kỳ.</div>
+  </figure>
+
+  <div class="cols">
+    <div class="note">
+      <h3>Tăng trưởng dồn về phía senior</h3>
+      <p><b>71%</b> mức tăng tin tuyển mảng software từ 5/2025 đến 5/2026 đến từ vị trí senior, và <b>37%</b> từ tin có chữ "AI" ngay trên tiêu đề. Quý 1/2026, vị trí senior chiếm <b>69,3%</b> tổng tin tuyển mảng software.</p>
+    </div>
+    <div class="note">
+      <h3>Công ty công nghệ cắt, phần còn lại tuyển</h3>
+      <p>Tháng 8/2026, việc làm thuộc nhóm nghề công nghệ trên toàn nền kinh tế tăng <b>86.000</b>, trong khi các công ty công nghệ giảm khoảng <b>14.700</b> vị trí. Người tuyển dev giờ là ngân hàng, nhà máy, bán lẻ.</p>
+    </div>
+    <div class="note">
+      <h3>Data: một cái tên, ba thị trường</h3>
+      <p>Data engineer ≈<b>18.800</b> tin đang mở và đi ngang; data science khoảng <b>828 tin mới mỗi tuần</b>, giữ đều nửa đầu 2026; nhóm Data &amp; Analytics rộng (chủ yếu analyst) âm 1,3% và thấp hơn 39,5% so với trước dịch.</p>
+    </div>
+    <div class="note">
+      <h3>QA tách làm đôi</h3>
+      <p>Vị trí manual-only thấp hơn <b>25–40%</b> so với đỉnh 2021; vai trò cần automation hoặc quality engineering đi ngang đến <b>+15%</b>. Developer đang được kỳ vọng tự ôm phần test automation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHẦN 3: LƯƠNG ============ -->
+<section id="pay">
+  <div class="sec-head">
+    <div class="rule"></div>
+    <span class="eyebrow">Phần 3 — Lương theo vai trò</span>
+    <h2>Thị trường định giá vai trò nào cao nhất</h2>
+  </div>
+  <p class="lede" style="margin-top:14px">Một điểm đáng chú ý ở cả hai thị trường: vai trò đông người nhất không phải vai trò lương cao nhất, và vai trò lương cao nhất thường là vai trò ít người nhất.</p>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Mỹ — lương trung vị theo vai trò, 2025</div>
+      <div class="fig-sub">Khoảng cách giữa vai trò cao nhất và thấp nhất là 2,8 lần.</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-wage"></div><div class="tt" id="tt-wage"></div></div>
+    <div class="fig-note">Nguồn: BLS, lương trung vị năm 2025 (USD/năm). Trung vị nghĩa là một nửa số người làm nghề đó kiếm nhiều hơn, một nửa kiếm ít hơn.</div>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Việt Nam — lương trung bình theo vị trí IT, 2025–2026</div>
+      <div class="fig-sub">Data Engineer đứng thứ hai, chỉ sau cấp C-level. QA và Tester nằm gần đáy bảng.</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-vnrole"></div><div class="tt" id="tt-vnrole"></div></div>
+    <div class="fig-note">Nguồn: ITviec — Báo cáo Lương &amp; Thị trường Tuyển dụng IT 2025–2026, khảo sát 1.839 người. Đơn vị: triệu VNĐ/tháng. Back-end lấy mức senior (mức entry chỉ 12,4 triệu); Data Engineer lấy mức 3–4 năm kinh nghiệm. Danh sách đầy đủ của ITviec gồm 27+ vị trí; đây là các vị trí có số liệu công khai.</div>
+  </figure>
+</section>
+
+<!-- ============ PHẦN 4: VIỆT NAM ============ -->
+<section id="vn">
+  <div class="sec-head">
+    <div class="rule"></div>
+    <span class="eyebrow">Phần 4 — Việt Nam</span>
+    <h2>Nhu cầu vẫn cao, nhưng biên chế không nở</h2>
+  </div>
+  <p class="lede" style="margin-top:14px">Việt Nam không có nguồn nào công bố số tin tuyển theo từng vai trò. Cái có là tỷ lệ doanh nghiệp <em>có nhu cầu</em> tuyển từng vị trí, và tỷ lệ vị trí <em>khó tuyển</em> — hai mặt của cùng một khoảng trống.</p>
+
+  <div class="tbl-wrap" style="margin-top:26px">
+    <table>
+      <thead><tr><th>Vị trí</th><th>DN có nhu cầu tuyển</th><th>Được xem là khó tuyển nhất</th><th>Lương ITviec</th></tr></thead>
+      <tbody>
+        <tr><td>Web developer</td><td>45%</td><td>—</td><td>—</td></tr>
+        <tr><td>Back-end developer</td><td>37,4%</td><td>—</td><td>54,9tr <span class="tiny">(senior)</span></td></tr>
+        <tr><td>AI engineer</td><td>30%</td><td>12,2%</td><td>—</td></tr>
+        <tr><td>Bridge engineer (BrSE)</td><td>—</td><td>9,92%</td><td>—</td></tr>
+        <tr><td>Solution architect</td><td>—</td><td>9,16%</td><td>—</td></tr>
+        <tr><td>Mobile developer</td><td>—</td><td>7,63%</td><td>—</td></tr>
+        <tr><td>Software architect</td><td>—</td><td>6,87%</td><td>—</td></tr>
+        <tr><td>Data engineer</td><td>Đang tăng</td><td>—</td><td>56,9tr</td></tr>
+        <tr><td>Data analyst / Data scientist</td><td>Đang tăng</td><td>—</td><td>40,65tr</td></tr>
+        <tr><td>QA / QC</td><td>—</td><td>—</td><td>31,2tr</td></tr>
+        <tr><td>Tester</td><td>—</td><td>—</td><td>28,8tr</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <h3>Nghịch lý: nhu cầu cao nhưng tin tuyển không tăng</h3>
+    <p>TopCV phân tích gần <b>300.000 tin tuyển dụng</b> và vẫn xếp IT–Phần mềm ở <b>top 2</b> về nhu cầu tuyển (8,64%, sau Kinh doanh/Bán hàng 47,5%). Con số này không mâu thuẫn với mức –0,6% của VietnamWorks: nhu cầu <em>tồn tại</em> nhưng doanh nghiệp không mở rộng biên chế. ITviec ghi nhận chỉ <b>60,7%</b> doanh nghiệp dự định mở rộng đội IT, giảm từ 73% năm 2024, và <b>38,7%</b> chọn không tăng trưởng hoặc thu hẹp — tỷ lệ cao nhất kể từ 2020.</p>
+  </div>
+
+  <div class="cols">
+    <div class="note">
+      <h3>Cung vẫn lệch về phía junior</h3>
+      <p>TopDev ước tính Việt Nam có khoảng <b>560.000</b> nhân sự IT, trong khi nhu cầu có thể chạm <b>750.000</b> trong 2026. Nhưng nguồn cung chủ yếu là junior và người chuyển ngành, còn doanh nghiệp muốn tuyển mid/senior làm được việc ngay.</p>
+    </div>
+    <div class="note">
+      <h3>Biến động nhân sự</h3>
+      <p>Tỷ lệ chủ động nhảy việc <b>20,2%</b>, tỷ lệ bị cắt giảm <b>10%</b>. 55% doanh nghiệp thiếu ứng viên chất lượng cao; 45% nhà cung cấp giải pháp AI không tuyển nổi nhân sự AI giỏi. TopCV xếp IT–Phần mềm ở mức rủi ro bị AI thay thế <b>16,92%</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHẦN 5: CÁCH ĐỌC ============ -->
+<section id="method">
+  <div class="sec-head">
+    <div class="rule"></div>
+    <span class="eyebrow">Phần 5 — Lưu ý khi dùng các con số này</span>
+    <h2>Năm cái bẫy</h2>
+  </div>
+  <div class="cols">
+    <div class="note">
+      <h3>Việc làm ≠ tin tuyển ≠ dự báo</h3>
+      <p>Ba loại số hoàn toàn khác nhau trong báo cáo này. Phần 1 là người <em>đang làm việc</em> (BLS, 2025). Phần 2 là tin tuyển <em>đang mở</em> (CompTIA/Indeed, 2026). Cột tăng trưởng là <em>dự báo 10 năm</em>. Đừng cộng hay so thẳng chúng với nhau.</p>
+    </div>
+    <div class="note">
+      <h3>"Data analyst" không tồn tại trong BLS</h3>
+      <p>Hệ thống phân loại nghề của Mỹ không có mã riêng cho data analyst. Người làm việc này nằm rải trong Data Scientists, Operations Research Analysts và Computer Occupations All Other. Con số "data analyst" ở bất kỳ đâu cũng là ước tính.</p>
+    </div>
+    <div class="note">
+      <h3>Chỉ số ≠ số lượng job</h3>
+      <p>Indeed và VietnamWorks công bố <em>chỉ số</em> quy về mốc gốc, không phải số tuyệt đối. "Software Development = 74,4" nghĩa là bằng 74,4% mức tháng 2/2020, không phải 74.400 tin. Chỉ CompTIA và BLS cho số tuyệt đối.</p>
+    </div>
+    <div class="note">
+      <h3>Một tin tuyển ≠ một chỗ làm</h3>
+      <p>Một tin có thể tuyển nhiều người, hoặc chỉ để thăm dò thị trường. Tháng 8/2026 minh họa rõ: tin tuyển gần 600.000 nhưng công ty công nghệ vẫn cắt 14.700 vị trí thật.</p>
+    </div>
+    <div class="note">
+      <h3>Việt Nam công bố theo quý</h3>
+      <p>Số VN mới nhất là Q2/2026 (hết tháng 6). Không có dữ liệu tháng 7–8 cho thị trường Việt Nam. Số tháng 9/2026 của Mỹ mới có đến ngày 04/09 nên đã được loại khỏi mọi biểu đồ.</p>
+    </div>
+    <div class="note">
+      <h3>Mỗi nguồn định nghĩa "IT" một kiểu</h3>
+      <p>BLS đếm theo mã nghề; CompTIA đếm theo nhóm nghề trên toàn nền kinh tế; Indeed đếm theo nhóm nghề của tin đăng; VietnamWorks gộp "CNTT/Viễn thông"; TopCV gọi là "IT–Phần mềm". Chỉ so xu hướng, đừng so số.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHỤ LỤC: NGOÀI CNTT ============ -->
+<section id="appendix" class="appendix">
+  <div class="sec-head">
+    <div class="rule"></div>
+    <span class="eyebrow">Phụ lục — Bối cảnh ngoài ngành CNTT</span>
+    <h2>Phần này không nói về IT</h2>
+  </div>
+  <p class="lede" style="margin-top:14px">Gom riêng ở đây để không làm loãng phần chính. Chỉ cần khi bạn muốn biết ngành IT đang đứng ở đâu so với phần còn lại của nền kinh tế.</p>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Mỹ — thay đổi tin tuyển theo nhóm nghề, T8/2026 so với T8/2025</div>
+      <div class="fig-sub">Nhóm xám là các ngành ngoài IT, đưa vào để giải thích vì sao chỉ số tổng lại âm.</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-yoy"></div><div class="tt" id="tt-yoy"></div></div>
+    <div class="fig-note">Tính trên trung bình tháng của chỉ số Indeed Hiring Lab, trên toàn bộ 47 nhóm nghề. "Toàn thị trường" là chỉ số tổng đã hiệu chỉnh mùa vụ và có trọng số theo quy mô. Chỉ số chưa hiệu chỉnh mùa vụ cũng cho cùng kết quả –2,8%.</div>
+  </figure>
+
+  <div class="callout">
+    <h3>Vì sao gần như mọi cột IT đều dương mà chỉ số tổng lại âm?</h3>
+    <p>Biểu đồ trên chỉ hiện 9 trong <b>47 nhóm nghề</b> ở phần trên — đó là các nhóm IT/sáng tạo, tức một lát cắt đã được chọn. Trên cả 47 nhóm: <b>24 âm, 23 dương</b>. Quan trọng hơn, chỉ số tổng <b>có trọng số theo quy mô</b>: các nhóm đang co lại là những ngành tuyển số lượng lớn nhất nước Mỹ — điều dưỡng –9,7%, tài xế –12,8%, dịch vụ ăn uống –7,7%, bán lẻ –5,3%, kế toán –18,5%, giáo dục –8,7%.</p>
+    <p style="margin-top:12px">Con số minh họa rõ nhất: lấy <em>trung bình cộng</em> mức thay đổi của cả 47 nhóm nghề ra <b>+1,0%</b>; nhân trọng số theo quy mô thật thì ra <b>–2,8%</b>. Toàn bộ khoảng cách đó đến từ trọng số.</p>
+  </div>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Việt Nam — nhu cầu tuyển dụng theo nhóm ngành, Q2/2026 so với Q2/2025</div>
+      <div class="fig-sub">Chỉ số toàn quốc đạt 125,5 điểm (+16,9%). CNTT/Viễn thông nằm trong số ít ngành âm.</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-vn"></div><div class="tt" id="tt-vn"></div></div>
+    <div class="fig-note">Nguồn: VietnamWorks — Báo cáo Thị trường Tuyển dụng Q2/2026. Hiển thị 5 ngành tăng mạnh nhất và toàn bộ các ngành giảm; các ngành ở giữa không được báo cáo công bố số cụ thể.</div>
+  </figure>
+</section>
+
+<!-- ============ NGUỒN ============ -->
+<section id="sources">
+  <div class="sec-head">
+    <div class="rule"></div>
+    <span class="eyebrow">Nguồn</span>
+    <h2>Dữ liệu gốc và biểu đồ của nguồn</h2>
+  </div>
+  <div class="srcs">
+    <div class="src-item">
+      <div class="who">BLS (Cục Thống kê LĐ Mỹ)</div>
+      <div class="what">Số việc làm, vị trí mở mỗi năm, lương trung vị và dự báo 10 năm cho từng mã nghề — nguồn của toàn bộ Phần 1 và Phần 3.
+        <a href="https://www.bls.gov/emp/tables/occupational-projections-and-characteristics.htm">Occupational Projections and Characteristics</a> ·
+        <a href="https://www.bls.gov/ooh/computer-and-information-technology/home.htm">Occupational Outlook Handbook — CNTT</a></div>
+    </div>
+    <div class="src-item">
+      <div class="who">CompTIA</div>
+      <div class="what">Tech Jobs Report hàng tháng — nguồn của mọi số tin tuyển tuyệt đối.
+        <a href="https://www.comptia.org/en-us/about-us/news/press-releases/">Danh sách công bố theo tháng</a> ·
+        <a href="https://www.comptia.org/en-us/resources/research/state-of-the-tech-workforce-2026/">State of the Tech Workforce 2026</a></div>
+    </div>
+    <div class="src-item">
+      <div class="who">Indeed Hiring Lab</div>
+      <div class="what">Dữ liệu thô theo ngày, theo nhóm nghề — mọi chỉ số Indeed trong báo cáo được tính lại từ đây.
+        <a href="https://github.com/hiring-lab/job_postings_tracker">Job Postings Tracker</a> ·
+        <a href="https://github.com/hiring-lab/ai-tracker">AI Tracker</a> ·
+        <a href="https://data.indeed.com/">Data Portal có biểu đồ tương tác</a></div>
+    </div>
+    <div class="src-item">
+      <div class="who">Indeed Hiring Lab</div>
+      <div class="what">Bài phân tích có 6 biểu đồ về đợt hồi phục mảng software và tác động AI.
+        <a href="https://hiringlab.indeed.com/2026/07/08/ai-and-job-postings-from-destruction-to-creation/">AI and Job Postings: From Destruction to Creation?</a></div>
+    </div>
+    <div class="src-item">
+      <div class="who">FRED (St. Louis Fed)</div>
+      <div class="what">Chuỗi chỉ số software development của Indeed, có biểu đồ tải về được.
+        <a href="https://fred.stlouisfed.org/series/IHLIDXUSTPSOFTDEVE">IHLIDXUSTPSOFTDEVE</a></div>
+    </div>
+    <div class="src-item">
+      <div class="who">Dice</div>
+      <div class="what">Báo cáo tháng 8/2026, có chart theo kỹ năng và chức danh.
+        <a href="https://www.dice.com/hiring/recruitment/reports/dice-tech-job-report">Dice Tech Job Report</a></div>
+    </div>
+    <div class="src-item">
+      <div class="who">AcademyUX <span style="color:var(--c5)">⚠</span></div>
+      <div class="what">Đếm tin tuyển designer theo tháng qua Adzuna API. Nguồn yếu — số giữa các bài không khớp nhau.
+        <a href="https://blog.academyux.com/ux-job-market-update-june-2026-us-heat-score-at-40/">Bản tháng 6/2026</a></div>
+    </div>
+    <div class="src-item">
+      <div class="who">Interview Query</div>
+      <div class="what">Báo cáo thị trường việc làm data theo tháng, tách riêng analyst / scientist / engineer.
+        <a href="https://www.interviewquery.com/p/jan-data-science-job-market-report">Bản tháng 1/2026</a></div>
+    </div>
+    <div class="src-item">
+      <div class="who">ITviec</div>
+      <div class="what">Báo cáo Lương &amp; Thị trường Tuyển dụng IT 2025–2026, khảo sát 1.839 người — nguồn của bảng lương Việt Nam.
+        <a href="https://itviec.com/report/vietnam-it-salary-and-recruitment-market">Bản báo cáo</a></div>
+    </div>
+    <div class="src-item">
+      <div class="who">TopCV</div>
+      <div class="what">Báo cáo thường niên 2025–2026, phân tích gần 300.000 tin tuyển dụng.
+        <a href="https://insights.topcv.vn/recruitment-report-2025-2026-vie">Bản báo cáo</a> ·
+        <a href="https://thanhnien.vn/buc-tranh-thi-truong-lao-dong-it-viet-trong-nam-2026-185251231154942235.htm">Tóm tắt phần IT trên Thanh Niên</a></div>
+    </div>
+    <div class="src-item">
+      <div class="who">VietnamWorks</div>
+      <div class="what">Chỉ số nhu cầu tuyển dụng theo quý, có biểu đồ theo ngành.
+        <a href="https://www.vietnamworks.com/hrinsider/bao-cao-thi-truong-tuyen-dung-q2-2026-vietnamworks.html">Báo cáo Q2/2026</a> ·
+        <a href="https://www.vietnamworks.com/hrinsider/bao-cao-thi-truong-tuyen-dung-viet-nam-quy-1-2026.html">Báo cáo Q1/2026</a></div>
+    </div>
+    <div class="src-item">
+      <div class="who">TopDev</div>
+      <div class="what">Báo cáo thị trường IT Việt Nam — nguồn ước tính 560.000 / 750.000 nhân sự.
+        <a href="https://topdev.vn/page/bao-cao-it-viet-nam">Kho báo cáo</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="tiny">Báo cáo tổng hợp ngày 14/09/2026. Số việc làm, vị trí mở mỗi năm, lương và dự báo 10 năm lấy từ BLS Employment Projections (năm gốc 2025). Số tin tuyển tuyệt đối lấy từ thông cáo tháng của CompTIA. Chỉ số tin tuyển tính lại trực tiếp từ dữ liệu thô Indeed Hiring Lab (chuỗi đến 04/09/2026). Số Việt Nam lấy từ báo cáo công khai của ITviec, TopCV, VietnamWorks và TopDev. Nơi nguồn công bố số làm tròn hoặc nguồn có chất lượng thấp, biểu đồ ghi rõ trong chú thích.</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+'use strict';
+const SVGNS='http://www.w3.org/2000/svg';
+const el=(n,a)=>{const e=document.createElementNS(SVGNS,n);for(const k in a)e.setAttribute(k,a[k]);return e;};
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const MONTHS=['T1','T2','T3','T4','T5','T6','T7','T8'];
+const fmtVN=n=>n.toLocaleString('vi-VN');
+const pct=n=>(n>0?'+':'')+n.toFixed(1).replace('.',',')+'%';
+const usd=n=>'$'+n.toLocaleString('vi-VN');
+
+/* ================= BLS: 23 vai trò ================= */
+const BLS=[
+ {n:'Software developer',en:'Software Developers',e:1717800,o:95300,g:10.2,w:135980},
+ {n:'IT support / Helpdesk',en:'Computer Support Specialists',e:903100,o:48700,g:-2.7,w:62890},
+ {n:'Quản lý hệ thống thông tin',en:'Computer & Information Systems Managers',e:685800,o:53500,g:15.8,w:175140},
+ {n:'Phân tích hệ thống',en:'Computer Systems Analysts',e:544400,o:32900,g:7.9,w:105850},
+ {n:'Vai trò CNTT khác',en:'Computer Occupations, All Other',e:471200,o:27000,g:5.1,w:116580},
+ {n:'Quản trị hệ thống / mạng',en:'Network & Computer Systems Administrators',e:323600,o:13400,g:-4.1,w:99130},
+ {n:'Data scientist',en:'Data Scientists',e:275600,o:24800,g:34.6,w:120230},
+ {n:'Thiết kế đồ họa',en:'Graphic Designers',e:253100,o:16000,g:-1.7,w:62960},
+ {n:'An ninh mạng',en:'Information Security Analysts',e:192900,o:14100,g:21.0,w:129180},
+ {n:'QA / Tester',en:'Software QA Analysts & Testers',e:187600,o:10700,g:5.7,w:104300},
+ {n:'Kiến trúc sư mạng',en:'Computer Network Architects',e:181800,o:9600,g:7.7,w:134050},
+ {n:'Art director',en:'Art Directors',e:140200,o:12200,g:4.2,w:114850},
+ {n:'Thiết kế giao diện / UI',en:'Web & Digital Interface Designers',e:132700,o:8300,g:6.0,w:104000},
+ {n:'Phân tích vận hành',en:'Operations Research Analysts',e:113100,o:7500,g:11.9,w:88940},
+ {n:'Programmer',en:'Computer Programmers',e:110800,o:4400,g:-7.3,w:100390},
+ {n:'Web developer',en:'Web Developers',e:87400,o:5300,g:3.8,w:92650},
+ {n:'Quản trị CSDL',en:'Database Administrators',e:75000,o:3300,g:-0.1,w:104620},
+ {n:'Kiến trúc sư CSDL',en:'Database Architects',e:69500,o:3900,g:9.4,w:139500},
+ {n:'Hoạt hình / kỹ xảo',en:'Special Effects Artists & Animators',e:51900,o:4200,g:-0.3,w:102030},
+ {n:'Nghiên cứu KH máy tính',en:'Computer & Info Research Scientists',e:38600,o:2900,g:21.8,w:140300},
+ {n:'Thống kê',en:'Statisticians',e:31300,o:1900,g:11.0,w:105650},
+ {n:'Định phí bảo hiểm',en:'Actuaries',e:31200,o:1500,g:9.2,w:130000},
+ {n:'Toán học',en:'Mathematicians',e:2200,o:100,g:0.6,w:126710}
+];
+
+function masterTable(){
+  const host=document.getElementById('master-tbl');
+  const tE=BLS.reduce((s,r)=>s+r.e,0), tO=BLS.reduce((s,r)=>s+r.o,0);
+  let h='<table><thead><tr><th>Vai trò</th><th>Việc làm 2025</th><th>Vị trí mở / năm</th><th>Tăng 10 năm</th><th>Lương trung vị</th></tr></thead><tbody>';
+  BLS.forEach(r=>{
+    h+=`<tr><td>${r.n}<span class="en">${r.en}</span></td>`+
+       `<td>${fmtVN(r.e)}</td><td>${fmtVN(r.o)}</td>`+
+       `<td class="${r.g<0?'g-neg':'g-pos'}">${pct(r.g)}</td><td>${usd(r.w)}</td></tr>`;
+  });
+  h+=`</tbody><tfoot><tr><td>Tổng 23 vai trò</td><td>${fmtVN(tE)}</td><td>${fmtVN(tO)}</td><td>—</td><td>—</td></tr></tfoot></table>`;
+  host.innerHTML=h;
+}
+
+/* ================= column chart ================= */
+const ABS=[
+  {m:'T1',v:465000,approx:true},{m:'T2',v:505045,approx:false},
+  {m:'T3',v:537000,approx:true},{m:'T4',v:575000,approx:true},
+  {m:'T5',v:587000,approx:true},{m:'T6',v:600000,approx:true},
+  {m:'T7',v:603000,approx:true},{m:'T8',v:598000,approx:true}
+];
+const AISHARE=[
+  {m:'1/25',v:2.729},{m:'2/25',v:2.791},{m:'3/25',v:2.759},{m:'4/25',v:2.780},
+  {m:'5/25',v:2.794},{m:'6/25',v:3.000},{m:'7/25',v:3.155},{m:'8/25',v:3.344},
+  {m:'9/25',v:3.551},{m:'10/25',v:3.868},{m:'11/25',v:4.183},{m:'12/25',v:4.371},
+  {m:'1/26',v:4.556},{m:'2/26',v:4.923},{m:'3/26',v:5.213},{m:'4/26',v:5.479},
+  {m:'5/26',v:5.697},{m:'6/26',v:5.852},{m:'7/26',v:6.221},{m:'8/26',v:6.540}
+];
+function drawCols(hostId,tipId,rows,o){
+  const host=document.getElementById(hostId), tip=document.getElementById(tipId);
+  host.innerHTML='';
+  const W=860,H=o.h||330,P={t:34,r:8,b:38,l:52};
+  const iw=W-P.l-P.r, ih=H-P.t-P.b;
+  const y=v=>P.t+ih-v/o.max*ih;
+  const bw=iw/rows.length, gap=Math.min(22,bw*0.3);
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,role:'img','aria-label':o.alt});
+  o.ticks.forEach(t=>{
+    svg.appendChild(el('line',{x1:P.l,x2:W-P.r,y1:y(t),y2:y(t),stroke:css('--rule'),'stroke-width':1}));
+    const lb=el('text',{x:P.l-10,y:y(t)+4,'text-anchor':'end',fill:css('--faint'),'font-size':11,'font-family':'IBM Plex Mono, monospace'});
+    lb.textContent=o.tick(t); svg.appendChild(lb);
+  });
+  rows.forEach((d,i)=>{
+    const x=P.l+i*bw+gap/2, w=bw-gap, yy=y(d.v), h=P.t+ih-yy, r=4;
+    const emph=(i===0||i===rows.length-1)||(o.emph&&o.emph.includes(i));
+    svg.appendChild(el('path',{d:`M${x},${yy+h} L${x},${yy+r} Q${x},${yy} ${x+r},${yy} L${x+w-r},${yy} Q${x+w},${yy} ${x+w},${yy+r} L${x+w},${yy+h} Z`,
+      fill:css(o.color||'--c1'),'fill-opacity':emph?1:0.62,stroke:css('--surface'),'stroke-width':2}));
+    const show=!o.labelEvery||i%o.labelEvery===0||i===rows.length-1;
+    if(show){
+      const vl=el('text',{x:x+w/2,y:yy-10,'text-anchor':'middle',fill:emph?css('--ink'):css('--muted'),
+        'font-size':11.5,'font-weight':emph?600:400,'font-family':'IBM Plex Mono, monospace'});
+      vl.textContent=o.val(d.v); svg.appendChild(vl);
+      const ml=el('text',{x:x+w/2,y:P.t+ih+22,'text-anchor':'middle',fill:css('--muted'),'font-size':11.5,'font-family':'IBM Plex Mono, monospace'});
+      ml.textContent=d.m; svg.appendChild(ml);
+    }
+    const hit=el('rect',{x:P.l+i*bw,y:P.t,width:bw,height:ih,fill:'transparent'});
+    hit.addEventListener('mouseenter',()=>{
+      tip.innerHTML=`<div class="tt-h">${o.tipH(d,i)}</div>`+o.tipRows(d,i);
+      tip.style.opacity=1;
+      const bx=host.getBoundingClientRect(), px=(P.l+i*bw+bw/2)/W*bx.width;
+      tip.style.left=Math.max(0,Math.min(bx.width-180,px-90))+'px';
+      tip.style.top=Math.max(0,(yy/H)*bx.height-70)+'px';
+    });
+    hit.addEventListener('mouseleave',()=>{tip.style.opacity=0;});
+    svg.appendChild(hit);
+  });
+  svg.appendChild(el('line',{x1:P.l,x2:W-P.r,y1:y(0),y2:y(0),stroke:css('--rule-strong'),'stroke-width':1}));
+  host.appendChild(svg);
+}
+
+/* ================= line chart ================= */
+const SERIES=[
+  {k:'Software Development', n:'Software Development', v:[68.1,70.3,71.6,72.8,74.1,73.2,75.0,74.4], c:'--c1'},
+  {k:'IT Systems', n:'IT Systems & Solutions', v:[68.3,71.2,72.1,72.2,72.2,69.5,72.0,72.6], c:'--c4'},
+  {k:'Media', n:'Media & Communications', v:[67.2,67.3,65.1,62.3,62.8,64.3,66.7,71.8], c:'--c2'},
+  {k:'IT Infra', n:'IT Infrastructure & Support', v:[64.9,67.1,70.2,69.5,70.1,69.7,70.8,70.7], c:'--c3'},
+  {k:'Data', n:'Data & Analytics', v:[59.3,61.5,62.1,62.7,62.4,61.3,62.1,60.5], c:'--c5'},
+  {k:'All', n:'Toàn thị trường (mọi ngành)', v:[103.3,104.6,103.9,102.7,101.9,100.8,101.6,101.9], c:'--ref', dash:true}
+];
+function drawLine(){
+  const host=document.getElementById('c-line'), tip=document.getElementById('tt-line');
+  host.innerHTML='';
+  const W=860,H=470,P={t:20,r:16,b:38,l:44};
+  const iw=W-P.l-P.r, ih=H-P.t-P.b;
+  const lo=56, hi=108;
+  const x=i=>P.l+i*(iw/(MONTHS.length-1));
+  const y=v=>P.t+ih-(v-lo)/(hi-lo)*ih;
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,role:'img','aria-label':'Biểu đồ đường: chỉ số tin tuyển dụng theo nhóm nghề tại Mỹ, tháng 1 đến tháng 8 năm 2026'});
+  [60,65,70,75,80,90,100].forEach(t=>{
+    svg.appendChild(el('line',{x1:P.l,x2:W-P.r,y1:y(t),y2:y(t),
+      stroke:t===100?css('--rule-strong'):css('--rule'),'stroke-width':1,'stroke-dasharray':t===100?'3 3':''}));
+    const lb=el('text',{x:P.l-9,y:y(t)+4,'text-anchor':'end',fill:css('--faint'),'font-size':11,'font-family':'IBM Plex Mono, monospace'});
+    lb.textContent=t; svg.appendChild(lb);
+  });
+  const b100=el('text',{x:W-P.r,y:y(100)-8,'text-anchor':'end',fill:css('--muted'),'font-size':10.5,'font-family':'IBM Plex Mono, monospace'});
+  b100.textContent='mức tháng 2/2020'; svg.appendChild(b100);
+  MONTHS.forEach((m,i)=>{
+    const lb=el('text',{x:x(i),y:P.t+ih+22,'text-anchor':'middle',fill:css('--muted'),'font-size':12,'font-family':'IBM Plex Mono, monospace'});
+    lb.textContent=m; svg.appendChild(lb);
+  });
+  SERIES.forEach(s=>{
+    const d=s.v.map((v,i)=>`${i?'L':'M'}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+    svg.appendChild(el('path',{d,fill:'none',stroke:css(s.c),'stroke-width':2,
+      'stroke-linejoin':'round','stroke-linecap':'round','stroke-dasharray':s.dash?'6 4':''}));
+    const li=s.v.length-1;
+    svg.appendChild(el('circle',{cx:x(li),cy:y(s.v[li]),r:4,fill:css(s.c),stroke:css('--surface'),'stroke-width':2}));
+  });
+  const cross=el('line',{x1:0,x2:0,y1:P.t,y2:P.t+ih,stroke:css('--rule-strong'),'stroke-width':1,opacity:0});
+  svg.appendChild(cross);
+  const dots=SERIES.map(s=>{const c=el('circle',{r:4.5,fill:css(s.c),stroke:css('--surface'),'stroke-width':2,opacity:0});svg.appendChild(c);return c;});
+  const overlay=el('rect',{x:P.l-12,y:P.t,width:iw+24,height:ih,fill:'transparent'});
+  overlay.addEventListener('mousemove',ev=>{
+    const bx=host.getBoundingClientRect();
+    const rel=(ev.clientX-bx.left)/bx.width*W;
+    let i=Math.round((rel-P.l)/(iw/(MONTHS.length-1)));
+    i=Math.max(0,Math.min(MONTHS.length-1,i));
+    cross.setAttribute('x1',x(i)); cross.setAttribute('x2',x(i)); cross.setAttribute('opacity',1);
+    SERIES.forEach((s,k)=>{dots[k].setAttribute('cx',x(i));dots[k].setAttribute('cy',y(s.v[i]));dots[k].setAttribute('opacity',1);});
+    tip.innerHTML=`<div class="tt-h">Tháng ${i+1}/2026</div>`+
+      SERIES.map(s=>`<div class="tt-row"><span class="l"><span class="s" style="background:${css(s.c)}"></span>${s.n}</span><span class="v">${s.v[i].toFixed(1).replace('.',',')}</span></div>`).join('');
+    tip.style.opacity=1;
+    const px=x(i)/W*bx.width;
+    tip.style.left=Math.max(0,Math.min(bx.width-250,px+16))+'px';
+    tip.style.top='10px';
+  });
+  overlay.addEventListener('mouseleave',()=>{
+    tip.style.opacity=0; cross.setAttribute('opacity',0); dots.forEach(d=>d.setAttribute('opacity',0));
+  });
+  svg.appendChild(overlay);
+  host.appendChild(svg);
+  document.getElementById('lg-line').innerHTML=
+    SERIES.map(s=>`<span class="lg"><span class="sw${s.dash?' dash':''}" style="${s.dash?'':'background:'+css(s.c)}"></span>${s.n}</span>`).join('');
+}
+function buildTable(){
+  const w=document.getElementById('tbl-line');
+  let h='<table><thead><tr><th>Nhóm nghề</th>'+MONTHS.map(m=>`<th>${m}</th>`).join('')+'<th>YTD</th><th>YoY</th><th>vs 2020</th></tr></thead><tbody>';
+  const extra={'Software Development':[9.3,12.4,-25.6],'IT Systems':[6.3,3.4,-27.4],'Media':[6.8,14.9,-28.2],
+    'IT Infra':[8.9,4.1,-29.3],'Data':[2.0,-1.3,-39.5],'All':[-1.4,-2.8,1.9]};
+  SERIES.forEach(s=>{
+    const e=extra[s.k];
+    h+=`<tr><td><span class="swatch" style="background:${css(s.c)}"></span>${s.n}</td>`+
+      s.v.map(v=>`<td>${v.toFixed(1).replace('.',',')}</td>`).join('')+
+      `<td>${pct(e[0])}</td><td>${pct(e[1])}</td><td>${pct(e[2])}</td></tr>`;
+  });
+  w.innerHTML=h+'</tbody></table>';
+}
+
+/* ================= horizontal bars ================= */
+function drawDiverge(hostId,tipId,rows,opts){
+  const host=document.getElementById(hostId), tip=document.getElementById(tipId);
+  host.innerHTML='';
+  const rowH=opts.rowH||30, W=860, P={t:26,r:16,b:14,l:opts.labelW};
+  const H=P.t+rows.length*rowH+P.b;
+  const iw=W-P.l-P.r;
+  const lo=opts.min, hi=opts.max;
+  const x=v=>P.l+(v-lo)/(hi-lo)*iw;
+  const fmt=opts.fmt||pct;
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,role:'img','aria-label':opts.alt});
+  opts.ticks.forEach(t=>{
+    svg.appendChild(el('line',{x1:x(t),x2:x(t),y1:P.t-8,y2:H-P.b,
+      stroke:t===0?css('--rule-strong'):css('--rule'),'stroke-width':1}));
+    const lb=el('text',{x:x(t),y:P.t-14,'text-anchor':'middle',fill:css('--faint'),'font-size':11,'font-family':'IBM Plex Mono, monospace'});
+    lb.textContent=opts.tickFmt?opts.tickFmt(t):(t>0?'+':'')+t+'%'; svg.appendChild(lb);
+  });
+  rows.forEach((r,i)=>{
+    const cy=P.t+i*rowH+rowH/2, bh=Math.min(15,rowH-9), ry=cy-bh/2, rad=4;
+    if(r.sep){
+      svg.appendChild(el('line',{x1:16,x2:W-P.r,y1:cy-2,y2:cy-2,stroke:css('--rule'),'stroke-width':1}));
+      const sl=el('text',{x:16,y:cy+16,fill:css('--faint'),'font-size':10.5,
+        'font-family':'IBM Plex Mono, monospace','letter-spacing':'0.1em'});
+      sl.textContent=r.sep.toUpperCase(); svg.appendChild(sl);
+      return;
+    }
+    const zx=x(0), vx=x(r.v), neg=r.v<0;
+    const bx=Math.min(zx,vx), bwid=Math.max(2,Math.abs(vx-zx));
+    const col=r.c?css(r.c):(r.ref?css('--ref'):(neg?css('--neg'):css('--pos')));
+    let d;
+    if(neg) d=`M${bx+rad},${ry} L${bx+bwid},${ry} L${bx+bwid},${ry+bh} L${bx+rad},${ry+bh} Q${bx},${ry+bh} ${bx},${ry+bh-rad} L${bx},${ry+rad} Q${bx},${ry} ${bx+rad},${ry} Z`;
+    else d=`M${bx},${ry} L${bx+bwid-rad},${ry} Q${bx+bwid},${ry} ${bx+bwid},${ry+rad} L${bx+bwid},${ry+bh-rad} Q${bx+bwid},${ry+bh} ${bx+bwid-rad},${ry+bh} L${bx},${ry+bh} Z`;
+    svg.appendChild(el('path',{d,fill:col,'fill-opacity':r.ref?0.55:1,stroke:css('--surface'),'stroke-width':2}));
+    const nm=el('text',{x:P.l-14,y:cy+4.5,'text-anchor':'end',
+      fill:r.ref?css('--muted'):css('--ink'),'font-size':12.5,'font-weight':r.ref?400:500,
+      'font-family':'IBM Plex Sans, sans-serif','font-style':r.ref?'italic':'normal'});
+    nm.textContent=r.n; svg.appendChild(nm);
+    const val=el('text',{x:neg?bx-8:bx+bwid+8,y:cy+4.5,'text-anchor':neg?'end':'start',
+      fill:css('--ink-2'),'font-size':12,'font-weight':500,'font-family':'IBM Plex Mono, monospace'});
+    val.textContent=fmt(r.v); svg.appendChild(val);
+    const hit=el('rect',{x:0,y:P.t+i*rowH,width:W,height:rowH,fill:'transparent'});
+    hit.addEventListener('mouseenter',()=>{
+      tip.innerHTML=`<div class="tt-h">${r.n}</div>
+        <div class="tt-row"><span class="l"><span class="s" style="background:${col}"></span>${opts.metric}</span><span class="v">${fmt(r.v)}</span></div>`+
+        (r.note?`<div class="tt-row"><span class="l" style="font-size:.74rem">${r.note}</span></div>`:'');
+      tip.style.opacity=1;
+      const bxr=host.getBoundingClientRect();
+      tip.style.left=Math.max(0,Math.min(bxr.width-210,(zx/W)*bxr.width))+'px';
+      tip.style.top=Math.max(0,((P.t+i*rowH)/H)*bxr.height-58)+'px';
+    });
+    hit.addEventListener('mouseleave',()=>{tip.style.opacity=0;});
+    svg.appendChild(hit);
+  });
+  host.appendChild(svg);
+}
+
+/* ================= data sets ================= */
+const ROLEG=[
+  {n:'Systems engineer / architect',v:42.7},
+  {n:'Software developer / engineer',v:32.3},
+  {n:'Cybersecurity engineer / analyst',v:23.2},
+  {n:'Tech support specialist',v:16.1}
+];
+const UX=[
+  {n:'Design Operations — 836 tin',v:33.5},
+  {n:'Product Management — 31.990 tin',v:-4.6},
+  {n:'Product Design — 16.410 tin',v:-9.9},
+  {n:'Design Engineering — 2.512 tin',v:-16.7},
+  {n:'UX Research — 922 tin',v:-18.1}
+];
+const VNROLE=[
+  {n:'CTO / CIO / VPoE',v:101.25},{n:'Data Engineer',v:56.9},
+  {n:'Back-end Developer (senior)',v:54.9},{n:'Tech Lead',v:51.8},
+  {n:'Product Owner / Manager',v:50.1},{n:'Project Leader / Manager',v:50.1},
+  {n:'Data Analyst / Data Scientist',v:40.65},{n:'Full-stack Developer',v:37.25},
+  {n:'QA / QC',v:31.2},{n:'Tester',v:28.8},
+  {n:'Embedded Engineer',v:21.4},{n:'IT Support / Helpdesk',v:20.0}
+];
+const YOY=[
+  {n:'Media & Communications',v:14.9},{n:'Software Development',v:12.4},
+  {n:'Project Management',v:12.4},{n:'Scientific R&D',v:12.2},
+  {n:'Arts & Entertainment',v:5.8},{n:'IT Infrastructure & Support',v:4.1},
+  {n:'IT Systems & Solutions',v:3.4},{n:'Marketing',v:-1.1},
+  {n:'Data & Analytics',v:-1.3,note:'Thấp hơn 39,5% so với trước đại dịch'},
+  {sep:'Để so sánh — các nhóm nghề tuyển số lượng lớn nhất nước Mỹ'},
+  {n:'Production & Manufacturing',v:8.3,ref:true},{n:'Sales',v:-3.5,ref:true},
+  {n:'Retail',v:-5.3,ref:true},{n:'Food Preparation & Service',v:-7.7,ref:true},
+  {n:'Nursing',v:-9.7,ref:true},{n:'Driving',v:-12.8,ref:true},
+  {sep:'Tổng hợp có trọng số theo quy mô'},
+  {n:'Toàn thị trường (mọi ngành)',v:-2.8,ref:true,note:'24/47 nhóm nghề âm, 23 nhóm dương'}
+];
+const VN=[
+  {n:'Kế toán / Kiểm toán',v:56.7},{n:'Kiến trúc / Xây dựng',v:42.0},
+  {n:'Nhân sự / Tuyển dụng',v:41.5},{n:'Ngân hàng / Dịch vụ tài chính',v:38.1},
+  {n:'Pháp lý',v:35.9},{n:'Chỉ số toàn quốc',v:16.9,ref:true},
+  {n:'CNTT / Viễn thông',v:-0.6,note:'Top 2 về nhu cầu nhưng không mở rộng biên chế'},
+  {n:'Kinh doanh / Bán hàng',v:-3.3},
+  {n:'Marketing / Quảng cáo / Truyền thông',v:-3.8},
+  {n:'Hành chính văn phòng',v:-4.0},{n:'Giáo dục / Đào tạo',v:-4.0}
+];
+const trVN=v=>String(v).replace('.',',')+' tr';
+const kVN=v=>fmtVN(v);
+
+function drawAll(){
+  masterTable();
+
+  drawDiverge('c-emp','tt-emp',BLS.map(r=>({n:r.n,v:r.e,c:'--c1',note:r.en})),
+    {min:0,max:1850000,ticks:[0,500000,1000000,1500000],labelW:220,rowH:27,
+     fmt:kVN,tickFmt:t=>t===0?'0':(t/1000000).toFixed(1).replace('.',',')+'tr',
+     metric:'Người đang làm việc',alt:'Biểu đồ thanh: số người đang làm việc theo 23 vai trò công nghệ tại Mỹ năm 2025'});
+
+  drawDiverge('c-grow','tt-grow',BLS.map(r=>({n:r.n,v:r.g,note:r.en})).sort((a,b)=>b.v-a.v),
+    {min:-12,max:38,ticks:[-10,0,10,20,30],labelW:220,rowH:27,
+     metric:'Dự báo 2025→2035',alt:'Biểu đồ thanh: tăng trưởng việc làm dự báo 2025-2035 theo 23 vai trò công nghệ tại Mỹ'});
+
+  drawDiverge('c-wage','tt-wage',BLS.map(r=>({n:r.n,v:r.w,c:'--c4',note:r.en})).sort((a,b)=>b.v-a.v),
+    {min:0,max:190000,ticks:[0,50000,100000,150000],labelW:220,rowH:27,
+     fmt:usd,tickFmt:t=>t===0?'0':'$'+(t/1000)+'k',
+     metric:'Lương trung vị / năm',alt:'Biểu đồ thanh: lương trung vị theo 23 vai trò công nghệ tại Mỹ năm 2025'});
+
+  drawCols('c-abs','tt-abs',ABS,{max:650000,ticks:[0,150000,300000,450000,600000],
+    tick:t=>t===0?'0':(t/1000)+'k', val:v=>fmtVN(Math.round(v/1000))+'k',
+    alt:'Biểu đồ cột: tin tuyển dụng công nghệ đang mở tại Mỹ theo tháng năm 2026',
+    tipH:(d,i)=>`Tháng ${i+1}/2026`,
+    tipRows:d=>`<div class="tt-row"><span class="l"><span class="s" style="background:${css('--c1')}"></span>Tin đang mở</span><span class="v">${d.approx?'~':''}${fmtVN(d.v)}</span></div>
+      <div class="tt-row"><span class="l">So với T1</span><span class="v">${pct((d.v/465000-1)*100)}</span></div>`});
+
+  drawCols('c-ai','tt-ai',AISHARE,{max:7,ticks:[0,2,4,6],h:310,labelEvery:3,emph:[12],
+    tick:t=>t+'%', val:v=>v.toFixed(2).replace('.',',')+'%',
+    alt:'Biểu đồ cột: tỷ lệ tin tuyển dụng có yêu cầu kỹ năng AI tại Mỹ, tháng 1/2025 đến tháng 8/2026',
+    tipH:d=>'Tháng '+d.m,
+    tipRows:d=>`<div class="tt-row"><span class="l"><span class="s" style="background:${css('--c1')}"></span>Tin có yêu cầu AI</span><span class="v">${d.v.toFixed(2).replace('.',',')}%</span></div>`});
+
+  drawLine(); buildTable();
+
+  drawDiverge('c-role','tt-role',ROLEG,{min:0,max:48,ticks:[0,10,20,30,40],labelW:240,
+    metric:'Tăng so với T1/2026',alt:'Biểu đồ thanh: tăng trưởng tin tuyển theo vai trò kỹ thuật tại Mỹ từ tháng 1 đến tháng 4 năm 2026'});
+  drawDiverge('c-ux','tt-ux',UX,{min:-22,max:38,ticks:[-20,-10,0,10,20,30],labelW:270,
+    metric:'So với tháng 5/2026',alt:'Biểu đồ thanh: thay đổi tin tuyển các vai trò thiết kế tại Mỹ trong tháng 6 năm 2026'});
+  drawDiverge('c-vnrole','tt-vnrole',VNROLE.map(r=>({...r,c:'--c2'})),{min:0,max:112,
+    ticks:[0,25,50,75,100],labelW:250,fmt:trVN,tickFmt:t=>t+'tr',metric:'Lương trung bình',
+    alt:'Biểu đồ thanh: lương trung bình theo vị trí IT tại Việt Nam năm 2025-2026'});
+  drawDiverge('c-yoy','tt-yoy',YOY,{min:-16,max:18,ticks:[-15,-10,-5,0,5,10,15],labelW:230,
+    metric:'Thay đổi so với cùng kỳ',alt:'Biểu đồ thanh: thay đổi tin tuyển dụng theo nhóm nghề tại Mỹ, tháng 8/2026 so với tháng 8/2025'});
+  drawDiverge('c-vn','tt-vn',VN,{min:-10,max:62,ticks:[-10,0,20,40,60],labelW:230,
+    metric:'Q2/2026 so với Q2/2025',alt:'Biểu đồ thanh: thay đổi nhu cầu tuyển dụng theo nhóm ngành tại Việt Nam, quý 2 năm 2026 so với cùng kỳ'});
+}
+drawAll();
+
+const btn=document.getElementById('btn-tbl'), tbl=document.getElementById('tbl-line');
+btn.addEventListener('click',()=>{
+  const open=tbl.hidden;
+  tbl.hidden=!open; btn.setAttribute('aria-expanded',String(open));
+  btn.textContent=open?'Ẩn bảng':'Xem dạng bảng';
+});
+let t=null;
+window.addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(drawAll,180);});
+const mq=window.matchMedia('(prefers-color-scheme: dark)');
+mq.addEventListener&&mq.addEventListener('change',()=>setTimeout(drawAll,50));
+})();
+</script>
+
+</body>
+</html>
