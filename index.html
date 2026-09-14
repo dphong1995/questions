@@ -148,6 +148,10 @@ tfoot td:first-child{font-family:"IBM Plex Sans",sans-serif}
 .swatch{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:8px}
 td .en{display:block; font-size:.72rem; color:var(--faint); font-family:"IBM Plex Mono",monospace; line-height:1.35}
 .g-pos{color:var(--pos)} .g-neg{color:var(--neg)}
+td.sig{text-align:left; white-space:normal; font-family:"IBM Plex Sans",sans-serif;
+  font-size:.83rem; color:var(--ink-2); line-height:1.45; min-width:150px}
+td.sig.none{color:var(--faint); text-align:center; min-width:0}
+td.src-cell{font-family:"IBM Plex Mono",monospace; font-size:.7rem; color:var(--faint); min-width:110px}
 
 .cols{display:grid; grid-template-columns:1fr 1fr; gap:26px 40px; margin-top:30px}
 .note{border-left:2px solid var(--rule-strong); padding-left:16px}
@@ -264,9 +268,11 @@ footer{margin-top:56px; padding-top:22px; border-top:2px solid var(--ink)}
   <div class="sec-head">
     <div class="rule"></div>
     <span class="eyebrow">Phần 2 — Tin tuyển thực tế 2026</span>
-    <h2>Từ tháng 1 đến nay, ai đang thật sự tuyển</h2>
+    <h2>Từ tháng 1 đến nay, vai trò nào đang thật sự được tuyển</h2>
   </div>
-  <p class="lede" style="margin-top:14px">Bảng ở Phần 1 là bức ảnh tĩnh. Phần này là dòng chảy: có bao nhiêu tin tuyển đang mở mỗi tháng trong 2026, và mức tăng rơi vào vai trò nào.</p>
+  <p class="lede" style="margin-top:14px">Bảng ở Phần 1 là bức ảnh tĩnh. Phần này là dòng chảy: bao nhiêu tin tuyển đang mở trong 2026 và mức tăng rơi vào vai trò nào — thị trường Mỹ trước, Việt Nam sau, rồi bảng tổng hợp 20 vai trò của cả hai.</p>
+
+  <h3 style="margin-top:36px; font-size:1.3rem">Mỹ</h3>
 
   <figure>
     <figcaption>
@@ -315,6 +321,37 @@ footer{margin-top:56px; padding-top:22px; border-top:2px solid var(--ink)}
     <div class="chart-box"><div id="c-ai"></div><div class="tt" id="tt-ai"></div></div>
     <div class="fig-note">Nguồn: Indeed Hiring Lab AI Tracker, dữ liệu thô đến 31/08/2026. Tăng từ 4,56% (T1/2026) lên 6,54% (T8/2026) — gấp đôi mức 3,34% của cùng kỳ 2025. Riêng tin tuyển gắn AI/ML tăng 101% so với cùng kỳ.</div>
   </figure>
+
+  <h3 style="margin-top:48px; font-size:1.3rem">Việt Nam</h3>
+  <p class="lede" style="margin-top:12px">Không sàn tuyển dụng Việt Nam nào công bố số tin tuyển theo vai trò theo thời gian. Thứ có được là khảo sát doanh nghiệp của TopCV: bao nhiêu phần trăm doanh nghiệp <em>có nhu cầu</em> tuyển từng vị trí, và vị trí nào họ thấy <em>khó tuyển</em> nhất — hai mặt của cùng một khoảng trống.</p>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Việt Nam — doanh nghiệp có nhu cầu tuyển vị trí nào</div>
+      <div class="fig-sub">Phần trăm doanh nghiệp được khảo sát cho biết đang cần tuyển vị trí đó.</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-vnneed"></div><div class="tt" id="tt-vnneed"></div></div>
+    <div class="fig-note">Nguồn: TopCV — Báo cáo Thị trường Tuyển dụng thường niên lần thứ 6 (2025–2026), khảo sát hơn 3.000 đại diện tuyển dụng trong quý 3/2025 kèm phân tích gần 300.000 tin đăng. Báo cáo chỉ công bố ba vị trí này ở dạng số.</div>
+  </figure>
+
+  <figure>
+    <figcaption>
+      <div class="fig-title">Việt Nam — vị trí khó tuyển nhất</div>
+      <div class="fig-sub">Cùng một danh sách với nhóm lương cao nhất: Solution Architect 56,3 triệu, AI Engineer và Data Engineer 38,5 triệu.</div>
+    </figcaption>
+    <div class="chart-box"><div id="c-vnhard"></div><div class="tt" id="tt-vnhard"></div></div>
+    <div class="fig-note">Nguồn: TopCV, cùng báo cáo. Phần trăm là tỷ lệ doanh nghiệp xếp vị trí đó vào nhóm khó tuyển nhất. Đây là thước đo <em>độ khan hiếm</em>, không phải số lượng tin tuyển.</div>
+  </figure>
+
+  <div class="callout" style="border-left-color:var(--c5)">
+    <h3>Vì sao không có biểu đồ đếm tin tuyển theo vai trò cho Việt Nam</h3>
+    <p>Tôi đã thử đếm trực tiếp từ các sàn tuyển dụng và phải bỏ, vì con số của họ không phải một thước đo nhất quán. Trên ITviec, truy vấn <span class="mono">"ai engineer"</span> trả về <b>356</b> việc làm trong khi truy vấn rộng hơn <span class="mono">"ai"</span> chỉ trả về <b>150</b> — một truy vấn hẹp hơn không thể ra nhiều kết quả hơn. Trên VietnamWorks, trang <span class="mono">"Mobile Developer"</span> hiển thị <b>1</b> việc làm trên toàn quốc trong khi <span class="mono">"Tester"</span> hiển thị <b>686</b>.</p>
+    <p style="margin-top:12px">Các trang này là trang SEO với phạm vi khớp khác nhau cho từng từ khoá, không phải bộ đếm dùng chung một định nghĩa. Đặt chúng cạnh nhau trong một biểu đồ sẽ tạo ra so sánh sai. Kiểm tra thực hiện ngày 14/09/2026.</p>
+  </div>
+
+  <h3 style="margin-top:48px; font-size:1.3rem">Tổng hợp 20 vai trò, cả hai thị trường</h3>
+  <p class="lede" style="margin-top:12px">Mỗi ô là số đo thực tế của 2026, không phải dự báo. Dấu — nghĩa là không nguồn công khai nào công bố số cho ô đó; tôi để trống thay vì ước lượng.</p>
+  <div class="tbl-wrap" style="margin-top:20px"><div id="signal-tbl"></div></div>
 
   <div class="cols">
     <div class="note">
@@ -849,6 +886,54 @@ const VN=[
   {n:'Hành chính văn phòng',v:-4.0},{n:'Giáo dục / Đào tạo',v:-4.0}
 ];
 const trVN=v=>String(v).replace('.',',')+' tr';
+const share=v=>String(v).replace('.',',')+'%';
+
+const VNNEED=[
+  {n:'Web developer',v:45.0},
+  {n:'Back-end developer',v:37.4},
+  {n:'AI engineer',v:30.0}
+];
+const VNHARD=[
+  {n:'AI engineer',v:12.2,note:'Lương 38,5 triệu'},
+  {n:'Bridge engineer (BrSE)',v:9.92},
+  {n:'Solution architect',v:9.16,note:'Lương cao nhất: 56,3 triệu'},
+  {n:'Mobile app developer',v:7.63},
+  {n:'Software architect',v:6.87}
+];
+
+/* Tín hiệu thực đo 2026 theo vai trò, hai thị trường. '—' = không nguồn nào công bố. */
+const SIGNAL=[
+ ['AI / ML engineer','+101% YoY tin AI/ML · hơn 320.000 tin yêu cầu AI (T8)','30% DN có nhu cầu · khó tuyển nhất 12,2%','Dice · CompTIA · TopCV'],
+ ['Systems engineer / architect','+42,7% từ T1 đến T4','Solution architect khó tuyển 9,16% · lương cao nhất 56,3tr','CompTIA · TopCV'],
+ ['Software developer','+12,4% YoY · +32,3% từ T1 đến T4','Web dev 45% và back-end 37,4% DN có nhu cầu','Indeed · CompTIA · TopCV'],
+ ['Cybersecurity','+23,2% từ T1 đến T4','—','CompTIA'],
+ ['Media &amp; Communications','+14,9% YoY','—','Indeed'],
+ ['Project management','+12,4% YoY','—','Indeed'],
+ ['IT support / hạ tầng','+4,1% YoY','—','Indeed'],
+ ['IT systems &amp; solutions','+3,4% YoY','—','Indeed'],
+ ['Data engineer','≈18.800 tin đang mở · đi ngang','Lương 38,5tr, ngang AI engineer','Interview Query · TopCV'],
+ ['Data scientist','≈828 tin mới mỗi tuần · ổn định','—','Interview Query'],
+ ['Data analyst','–1,3% YoY · –39,5% so với trước dịch','—','Indeed'],
+ ['QA / Tester','Manual –25% đến –40% so với đỉnh 2021 · automation 0 đến +15%','Lương 28,8–31,2tr, gần đáy bảng','Khảo sát ngành · ITviec'],
+ ['Design Operations','836 tin · +33,5% so với tháng trước','—','AcademyUX ⚠'],
+ ['Product Management','31.990 tin · –4,6%','—','AcademyUX ⚠'],
+ ['Product Design','16.410 tin · –9,9%','—','AcademyUX ⚠'],
+ ['Design Engineering','2.512 tin · –16,7%','—','AcademyUX ⚠'],
+ ['UX Research','922 tin · –18,1%','—','AcademyUX ⚠'],
+ ['Mobile developer','—','Khó tuyển 7,63%','TopCV'],
+ ['Bridge engineer (BrSE)','—','Khó tuyển 9,92%','TopCV'],
+ ['Software architect','—','Khó tuyển 6,87%','TopCV']
+];
+function signalTable(){
+  let h='<table><thead><tr><th>Vai trò</th><th style="text-align:left">Mỹ — tín hiệu 2026</th><th style="text-align:left">Việt Nam — tín hiệu 2026</th><th style="text-align:left">Nguồn</th></tr></thead><tbody>';
+  SIGNAL.forEach(r=>{
+    h+=`<tr><td>${r[0]}</td>`+
+       `<td class="sig${r[1]==='—'?' none':''}">${r[1]}</td>`+
+       `<td class="sig${r[2]==='—'?' none':''}">${r[2]}</td>`+
+       `<td class="sig src-cell">${r[3]}</td></tr>`;
+  });
+  document.getElementById('signal-tbl').innerHTML=h+'</tbody></table>';
+}
 const kVN=v=>fmtVN(v);
 
 function drawAll(){
@@ -884,6 +969,13 @@ function drawAll(){
     metric:'Tăng so với T1/2026',alt:'Biểu đồ thanh: tăng trưởng tin tuyển theo vai trò kỹ thuật tại Mỹ từ tháng 1 đến tháng 4 năm 2026'});
   drawDiverge('c-ux','tt-ux',UX,{min:-22,max:38,ticks:[-20,-10,0,10,20,30],labelW:270,
     metric:'So với tháng 5/2026',alt:'Biểu đồ thanh: thay đổi tin tuyển các vai trò thiết kế tại Mỹ trong tháng 6 năm 2026'});
+  signalTable();
+  drawDiverge('c-vnneed','tt-vnneed',VNNEED.map(r=>({...r,c:'--c2'})),{min:0,max:52,
+    ticks:[0,10,20,30,40,50],labelW:220,fmt:share,tickFmt:t=>t+'%',metric:'DN có nhu cầu tuyển',
+    alt:'Biểu đồ thanh: phần trăm doanh nghiệp Việt Nam có nhu cầu tuyển từng vị trí IT'});
+  drawDiverge('c-vnhard','tt-vnhard',VNHARD.map(r=>({...r,c:'--c5'})),{min:0,max:14,
+    ticks:[0,5,10],labelW:220,fmt:share,tickFmt:t=>t+'%',metric:'DN xếp vào nhóm khó tuyển',
+    alt:'Biểu đồ thanh: các vị trí IT khó tuyển nhất tại Việt Nam'});
   drawDiverge('c-vnrole','tt-vnrole',VNROLE.map(r=>({...r,c:'--c2'})),{min:0,max:112,
     ticks:[0,25,50,75,100],labelW:250,fmt:trVN,tickFmt:t=>t+'tr',metric:'Lương trung bình',
     alt:'Biểu đồ thanh: lương trung bình theo vị trí IT tại Việt Nam năm 2025-2026'});
